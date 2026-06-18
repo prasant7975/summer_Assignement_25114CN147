@@ -1,4 +1,4 @@
-//a program to Move zeroes to end
+/
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
