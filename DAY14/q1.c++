@@ -1,30 +1,33 @@
 //A program to Linear search:
-#include <bits/stdc++.h>
-using namespace std;
-int main(){
-    int arr[100],size;
-    cout<<"Enter the size of the array: ";
-    cin>>size;
-    cout<<"------Enter the elements-------"<<endl;
-    for(int i=0;i<size;i++){
-        cin>>arr[i];
+#include <stdio.h>
+
+int main(void) {
+    int arr[100], size;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &size);
+
+    printf("------Enter the elements-------\n");
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
     }
-    //performing linear search:
-    int num,post=0;
-    cout<<"Enter the number to be searched: ";
-    cin>>num;
-    for(int i=0;i<size;i++){
-        if(arr[i]==num){
-            post=i+1;
+
+    // performing linear search:
+    int num, post = 0;
+    printf("Enter the number to be searched: ");
+    scanf("%d", &num);
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == num) {
+            post = i + 1;
         }
     }
-    if(post!=0){
-        cout<<"The Number is present at "<<post<<" position"<<endl;
+
+    if (post != 0) {
+        printf("The Number is present at %d position\n", post);
+    } else {
+        printf("Number not present\n");
     }
-    else{
-        cout<<"Number not present"<<endl;
-    }
+
     return 0;
-
-
 }

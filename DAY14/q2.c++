@@ -1,22 +1,27 @@
 // a program to print Frequency of an element:
-#include <bits/stdc++.h>
-using namespace std;
-int main(){
-    int arr[100],size;
-    cout<<"Enter the size of the array: ";
-    cin>>size;
-    cout<<"------Enter the elements-------"<<endl;
-    for(int i=0;i<size;i++){
-        cin>>arr[i];
+#include <stdio.h>
+
+int main(void) {
+    int arr[100], size;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &size);
+
+    printf("------Enter the elements-------\n");
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
     }
-    int num,freq=0;
-    cout<<"Enter the element whose frequency to measure: ";
-    cin>>num;
-    for(int i=0;i<size;i++){
-        if (arr[i]==num){
+
+    int num, freq = 0;
+    printf("Enter the element whose frequency to measure: ");
+    scanf("%d", &num);
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == num) {
             freq++;
         }
     }
-    cout<<"The frequency is: "<<freq;
+
+    printf("The frequency is: %d", freq);
     return 0;
 }    
